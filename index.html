@@ -57,7 +57,101 @@
       </div>
     </nav>
     <!-- HEADER -->
-    <!-- HEADER > GET STARTED CONTENT MODEL -->
+    <header
+      class="vh-100"
+      style="
+        background: url(https://source.unsplash.com/GWe0dlVD9e0) center/cover
+          no-repeat;
+      "
+    >
+      <div class="container mt-5 pt-5 h-25">
+        <h4 class="text-light font-monospace text-shadow animate-text-right">
+          Financial Planing For Life
+        </h4>
+        <h1 class="display-1 text-white text-shadow animate-text-right-3s">
+          Trusted to help guide entrepreneurs make better financial decisions
+        </h1>
+        <button
+          class="btn btn-lg btn-info shadow mt-3 animate-text-right-5s"
+          data-bs-toggle="modal"
+          data-bs-target="#getOffer"
+        >
+          Get Offer
+        </button>
+      </div>
+      <!-- HEADER > GET STARTED CONTENT MODEL -->
+      <div
+        class="modal fade"
+        id="getOffer"
+        tabindex="-1"
+        aria-labelledby="getOfferLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="getOfferLabel">New Message</h5>
+              <button
+                class="btn-close"
+                type="button"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form action="#">
+                <div class="mb-3">
+                  <label class="col-form-label">Email:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="example@email.com"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label class="col-form-label">First Name:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="John maybe idk"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label class="col-form-label">Last Name:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Why do we even have a last name anyway"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label class="col-form-label">Message:</label>
+                  <textarea
+                    type="text"
+                    class="form-control"
+                    style="resize: none"
+                    placeholder="Type something nice for me here please"
+                  ></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                class="btn btn-danger"
+                type="button"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button class="btn btn-primary" type="submit">
+                Send message
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
     <!-- ABOUT -->
     <!-- ABOUT > ABOUT MODEL CONTENT -->
     <!-- TEAM -->
