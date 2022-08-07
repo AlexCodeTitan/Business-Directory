@@ -168,11 +168,12 @@
         style="max-width: 1400px"
       >
         <div class="row g-0">
-          <div class="col-lg-6">
+          <div class="col-lg-6" style="overflow: hidden">
             <img
               src="https://source.unsplash.com/376KN_ISplE"
               alt="about img"
               class="card-img-top"
+              style="width: 120%"
             />
           </div>
           <div class="col-lg-6">
@@ -325,6 +326,110 @@
     </section>
 
     <!-- TEAM -->
+    <section class="container mb-5 pt-4" id="Team">
+      <div class="row">
+        <div class="col-lg-6">
+          <h4 class="font-monospace my-5">Our Expert Team</h4>
+          <h2 class="display-1">Meet our financial executive team.</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-sm-6 mb-5 mb-sm-3 pe-1">
+          <div class="card shadow" style="width: 18rem">
+            <img
+              src="https://source.unsplash.com/7YVZYZeITc8"
+              alt=""
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5 class="card-title">John "Too Serious" Doe</h5>
+              <p class="card-text text-info">Advisor.</p>
+              <a
+                tabindex="0"
+                class="btn btn-sm btn-info"
+                role="button"
+                data-bs-toggle="popover"
+                data-bs-trigger="focus"
+                title="John Doe"
+                data-bs-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit labore eaque molestiae non pariatur rerum numquam unde doloribus, quasi praesentium! Libero aperiam deserunt nihil quae assumenda dolorem nesciunt blanditiis rerum."
+                >About John</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 mb-5 mb-sm-3 pe-1">
+          <div class="card shadow" style="width: 18rem">
+            <img
+              src="https://source.unsplash.com/u3WmDyKGsrY"
+              alt=""
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Miss "Idk what I'm doing"</h5>
+              <p class="card-text text-info">Advisor.</p>
+              <a
+                tabindex="0"
+                class="btn btn-sm btn-info"
+                role="button"
+                data-bs-toggle="popover"
+                data-bs-trigger="focus"
+                title="John Doe"
+                data-bs-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit labore eaque molestiae non pariatur rerum numquam unde doloribus, quasi praesentium! Libero aperiam deserunt nihil quae assumenda dolorem nesciunt blanditiis rerum."
+                >About John</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 mb-5 mb-sm-3 pe-1">
+          <div class="card shadow" style="width: 18rem">
+            <img
+              src="https://source.unsplash.com/Qy4wpL2B4ac"
+              alt=""
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Dj Monochrome</h5>
+              <p class="card-text text-info">Advisor.</p>
+              <a
+                tabindex="0"
+                class="btn btn-sm btn-info"
+                role="button"
+                data-bs-toggle="popover"
+                data-bs-trigger="focus"
+                title="John Doe"
+                data-bs-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit labore eaque molestiae non pariatur rerum numquam unde doloribus, quasi praesentium! Libero aperiam deserunt nihil quae assumenda dolorem nesciunt blanditiis rerum."
+                >About John</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 mb-5 mb-sm-3 pe-1">
+          <div class="card shadow" style="width: 18rem">
+            <img
+              src="https://source.unsplash.com/RGtSTDmmcCk"
+              alt=""
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Ariana not so grande</h5>
+              <p class="card-text text-info">Advisor.</p>
+              <a
+                tabindex="0"
+                class="btn btn-sm btn-info"
+                role="button"
+                data-bs-toggle="popover"
+                data-bs-trigger="focus"
+                title="John Doe"
+                data-bs-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit labore eaque molestiae non pariatur rerum numquam unde doloribus, quasi praesentium! Libero aperiam deserunt nihil quae assumenda dolorem nesciunt blanditiis rerum."
+                >About John</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
 
     <!-- FOOTER -->
 
@@ -336,10 +441,21 @@
     ></script>
     <!-- Script for tooltips -->
     <script>
-      const tooltipTriggerList =
-      document.querySelectorAll('[data-bs-toggle="tooltip"]') const tooltipList =
-      [...tooltipTriggerList].map(tooltipTriggerEl => new
-      bootstrap.Tooltip(tooltipTriggerEl))
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
+    <!-- Script for popover -->
+    <script>
+      const popoverTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="popover"]'
+      );
+      const popoverList = [...popoverTriggerList].map(
+        (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
+      );
     </script>
   </body>
 </html>
